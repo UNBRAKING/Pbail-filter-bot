@@ -13,28 +13,28 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '26614080'))
-API_HASH = environ.get('API_HASH', '7d2c9a5628814e1430b30a1f0dc0165b')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7957504685:AAGkAvk-LQIKPr5pGKIQ1MZOCLS6QWjT24E')
+API_ID = int(environ.get('API_ID', '22644808'))
+API_HASH = environ.get('API_HASH', '9b0d4bdb2fa0acde8650712100d8ebe1')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7859288880:AAE8k3pJNNJCkxwJF0loVHgpLp8psnpHia4')
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5606990991').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7641491740, 7538572906').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/Pbail")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002349193496'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002525011494'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/PbailMovieRequestGroup')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002431204453 -1002331242973 -1002370087347').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://barih13103:jH0Aa1CV4JTqafhf@cluster0.oozr9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002545071865').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://coderx0805:EjFHGDShcPT7J2hM@cluster0.bm8jhbj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002252323257'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002601173625'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/4dad0cc16f190468454ee.jpg')
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002355413002'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002452837222'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002601173625'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002601173625'))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002433715566'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002601173625'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Pbail_Movie_Channel/10")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "2ad6aacb3fafe08448a1f897438505ff8e2023b8")
@@ -52,13 +52,13 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '-1002490446965')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002601173625')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002187853993'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002456759169')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002684880962'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002343865030')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002413784926'))
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002456759169'))
+UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002601173625'))
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002343865030'))
 
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '8000')
